@@ -1,0 +1,50 @@
+Projet Réseau 2018 : 
+
+	Ce projet à été réalisé par Ibrahim Bamba, (ikader737@gmail.com)
+				    Hugo Magnaudet, (hugo.magnaudet@gmail.com)
+				    Solal Gantelet. (solal.gantelet@gmail.com)
+	C'est un programme permettant à des joueurs de se connecter à un serveur, créer des parties de "labyrhante" et s'affronter sur le serveur.
+	Le code du serveur est écris en java et celle des joueurs en C.
+
+Labyrhante :
+	
+	Des joueurs sont placés aléatoirement dans un labyrinthe hanté par des fantômes, leur but est de les capturer.
+	Le joueur ayant capturé le plus de fantômes gagne la partie (MODE CLASSIC).
+
+Tester :
+
+	***Pour tester lors de la soutenance*** Connectez vous à lucien.informatique.univ-paris-diderot.fr et copier via scp l'archive.
+	Placez vous dans le répertoire où vous avez mis l'archive contenant le jeu.
+	Décompressez l'archive.
+	Ouvrez un terminal dans ce même répertoire.
+	Exécutez la commande "make" (cela va compiler tout les fichiers .java et .c)
+	Exécuter la commande "java Server" pour lancer le serveur (cela va notamment vous afficher l'ip de la machine sur le réseau)
+	Pour les joueurs (autre machine) exécutez "./joueur <votre pseudo> <votre port UDP> <l'ip sur laquelle tourne le serveur>"
+	C'est partit !
+
+Contenance :
+	
+	- [Dossier] Types_Labyrinthe
+	- [Fichier] Case.java
+	- [Fichier] Game.java
+	- [Fichier] Ip.java (pour connaitre l'ip de votre machine sur un réseau)
+	- [Fichier] joueur.c
+	- [Fichier] joueur.h
+	- [Fichier] Labyrinthe.java
+	- [Fichier] LectureEcriture.java
+	- [Fichier] Makefile
+	- [Fichier] PlayerService.java
+	- [Fichier] Server.java
+	- [Fichier] README.txt
+
+***Extensions***
+STEALING :
+
+	Les joueurs doivent toujours attraper les fantômes mais en plus ils peuvent voler les fantômes des autres joueurs !
+
+JUGGERNAUT :
+
+	Toujours le même principe sauf qu'en plus en début de partie un joueur est désigné "juggernaut" et doit manger les 
+	autres joueurs pour gagner !
+
+
